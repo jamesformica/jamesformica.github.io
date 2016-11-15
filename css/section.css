@@ -68,9 +68,19 @@ section > .info > .description {
 
 section > .info > .image {
     margin-top: 20px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     max-height: 300px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
     order: 3;
+    cursor: pointer;
+}
+
+section > .info > .image.left {
+    background-position: left;
+}
+
+section > .info > .image.right {
+    background-position: right;
 }
