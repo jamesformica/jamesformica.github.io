@@ -40,3 +40,7 @@ a:hover {
     font-size: 40px;
     text-transform: uppercase;
 }
+
+.code {
+    overflow: auto;
+}

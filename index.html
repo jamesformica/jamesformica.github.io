@@ -9,10 +9,13 @@
 	<link rel="stylesheet" href="css/icons.css">
 	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700" rel="stylesheet">
 
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/init.js"></script>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body onload="init()">
 	<header>
 		<div class="circle"></div>
 		<i class="icon-hat orbit"></i>
@@ -240,23 +243,47 @@
 			<div class="info">
 				<div class="description">
 					<p>
-						CHOO CHOO!!!! My second favourite project, ever! As a child, I obsessed over Lego Loco and always wanted a version I
-						could play with online.
+						CHOO CHOO!!!! My second favourite project, ever! As a child, I obsessed over Lego Loco and always wanted a version I could
+						play with online.
 						<br/>
+						<br/> What started out as one man's dream to turn an Html Canvas into a basic birdseye train simulator turned into
+						an awesome team effort with my colleagues. There is so much to talk about with this project. From the amazing track
+						joining logic to the hilarious train naming conventions and the spectaular 'lighting engine', this project became more
+						than I ever thought was possible.
 						<br/>
-						What started out as one man's dream to turn an Html Canvas into a basic birdseye train simulator turned into an awesome
-						team effort with my colleagues. There is so much to talk about with this project. From the amazing track joining logic to
-						the hilarious train naming conventions and the spectaular 'lighting engine', this project became more than I ever thought
-						was possible.
-						<br/>
-						<br/>
-						Seriously, stop reading this and <a href="https://jamesformica.github.io/trains" target="_blank">GO PLAY THIS GAME</a>, you won't regret it!
+						<br/> Seriously, stop reading this and <a href="https://jamesformica.github.io/trains" target="_blank">GO PLAY THIS GAME</a>,
+						you won't regret it!
 					</p>
 				</div>
 				<div class="image right" style="background-image: url('images/trains.png')"></div>
 		</section>
 
-		<h2>Hello World (code golf)</h2>
+		<!--Hello World-->
+		<section>
+			<div class="header">
+				<h2 id="helloworld">Hello World (code golf)</h2>
+			</div>
+
+			<div class="info">
+				<div class="code">
+					<p>A fun <a href="#">code golf</a> challenge between colleague to display the text "Hello, World!" in a javascript alert()
+						with the following restrictions:</p>
+					<ul>
+						<li>Cannot use any "strings" or 'chars'</li>
+						<li>Cannot use any numberics (1,2,3,4...)</li>
+					</ul>
+					<p>Here is my final answer:</p>
+					<pre class="ui-helloworld">
+					</pre>
+					<p>And minified:</p>
+					<pre class="ui-helloworld-min">
+					</pre>
+					<br/>
+					<p>And just for fun I thought I'd share my good friend Scott's amazing answer. See if you can work out how it's done...
+					<pre class="ui-helloworld-scott">
+					</pre>
+				</div>
+		</section>
 
 		<!--Off The Record-->
 		<section>
@@ -275,19 +302,15 @@
 						Oh boy... this one takes me back. The idea was simple: <i>Ask a question to your friends - receive annonymous
 						answers from your friends.</i>
 						<br/>
+						<br/> It quickly became clear that maybe this app wasn't such a good idea and could get people in trouble so I stopped.
 						<br/>
-						It quickly became clear that maybe this app wasn't such a good idea and could get people in trouble so I stopped.
-						<br/>
-						<br/>
-						I remember struggling with the UI and overall colour scheme with this project. It helped me learn what different
+						<br/> I remember struggling with the UI and overall colour scheme with this project. It helped me learn what different
 						styles were out there and which ones I personally liked. It's by no means my favourite project but it is an important
 						one in terms of my development skills.
 					</p>
 				</div>
 				<div class="image" style="background-image: url('images/offtherecord.png')"></div>
 		</section>
-
-		<h2>ECC</h2>
 
 	</article>
 
