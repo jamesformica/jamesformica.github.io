@@ -1,4 +1,5 @@
 function init() {
+    var $body = $("body");
     var $helloWorld = $(".ui-helloworld");
     var $helloWorldMin = $(".ui-helloworld-min");
     var $helloWorldScott = $(".ui-helloworld-scott");
@@ -26,4 +27,22 @@ function init() {
 
     var helloWorldScott = "a=-~true;alert(([]+function Hello(a, World){!a}).substr(++a*a).replace(/[(a){}]/g,[]+[]));";
     $helloWorldScott.text(helloWorldScott);
+
+    var $gallery = $(".ui-gallery");
+    var $close = $gallery.find(".ui-close");
+    var $galleryImg = $gallery.find("img");
+
+    var $images = $(".image");
+    $images.click((e) => {
+        var $image = $(e.currentTarget);
+
+        $galleryImg.attr("src", $image.data("url"));
+        $gallery.addClass("show");
+        $body.addClass("no-scroll");
+    });
+
+    $close.click(() => {
+        $gallery.removeClass("show");
+        $body.removeClass("no-scroll");
+    });
 }
