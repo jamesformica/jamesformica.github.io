@@ -28,6 +28,10 @@ function init() {
     var helloWorldScott = "a=-~true;alert(([]+function Hello(a, World){!a}).substr(++a*a).replace(/[(a){}]/g,[]+[]));";
     $helloWorldScott.text(helloWorldScott);
 
+    hljs.highlightBlock($helloWorld.get(0));
+    hljs.highlightBlock($helloWorldMin.get(0));
+    hljs.highlightBlock($helloWorldScott.get(0));
+
     var $gallery = $(".ui-gallery");
     var $close = $gallery.find(".ui-close");
     var $galleryImg = $gallery.find("img");

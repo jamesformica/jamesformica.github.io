@@ -28,9 +28,9 @@ header > i {
 }
 
 header > .spin {
-    /*animation-name: head-spin;*/
+    animation-name: head-spin;
     animation-duration: 8s;
-    animation-iteration-count: infinite;
+    /*animation-iteration-count: infinite;*/
     animation-timing-function: ease-in-out;
     color: indianred;
 }
@@ -38,9 +38,9 @@ header > .spin {
 header > .orbit {
     color: lightblue;
     font-size: 70px;
-    /*animation-name: head-orbit;*/
+    animation-name: head-orbit;
     animation-duration: 8s;
-    animation-iteration-count: infinite;
+    /*animation-iteration-count: infinite;*/
     animation-timing-function: ease-in-out;
     transform: translateY(-20px);
 }
