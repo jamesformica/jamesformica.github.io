@@ -67,9 +67,10 @@ section > .info > .description {
 }
 
 section > .info > .image {
+    margin-top: 20px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     max-height: 300px;
     order: 3;
 }
