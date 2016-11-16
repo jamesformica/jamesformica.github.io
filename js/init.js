@@ -2,7 +2,7 @@ function init() {
     $.ajax({
         url: "https://fonts.googleapis.com/css?family=Libre+Franklin:400,700",
         type: "GET"
-    }).done((result) => {
+    }).done(function(result) {
         let style = document.createElement("style");
         style.innerHTML = result;
         document.head.appendChild(style);
