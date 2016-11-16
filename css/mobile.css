@@ -1,0 +1,26 @@
+@media (max-width: 1100px) {
+    .about > h1 {
+        font-size: 28px;
+    }
+
+    section > .header {
+        flex-direction: column;
+    }
+
+    section > .header > .links {
+        margin-top: 5px;
+    }
+
+    section > .info {
+        flex-direction: column;
+    }
+
+    section > .info > div {
+        width: 100%;
+    }
+
+    section > .info > .image {
+        order: 1 !important;
+        height: 300px;
+    }
+}
