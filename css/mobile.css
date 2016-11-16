@@ -7,6 +7,10 @@
         flex-direction: column;
     }
 
+    section > .header > h2 {
+        text-align: center;
+    }
+
     section > .header > .links {
         margin-top: 10px;
     }

@@ -3,9 +3,10 @@ section {
 }
 
 section > .header {
-    border-bottom: 1px solid #5d5d5d;
+    border-bottom: 1px solid black;
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding: 10px 0;
 }
 
@@ -18,9 +19,9 @@ section > .header > h2 {
     text-transform: uppercase;
 }
 
-section > .header > h2::first-letter {
-    color: indianred;
+section > .header > h2::first-letter{
     font-size: 40px;
+    font-weight: 100;
 }
 
 section > .header > .links > a {
@@ -35,7 +36,7 @@ section > .header > .links > a:last-of-type {
 }
 
 section > .header > .links > i {
-    color: #5d5d5d;
+    color: black;
     line-height: 16px;
     vertical-align: middle;
 }
