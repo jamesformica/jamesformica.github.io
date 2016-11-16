@@ -35,7 +35,7 @@ header > .spin {
 }
 
 header > .orbit {
-    color: lightblue;
+    color: steelblue;
     font-size: 70px;
     animation-name: head-orbit;
     animation-duration: 8s;
