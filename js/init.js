@@ -45,7 +45,7 @@ function init() {
     var $galleryImg = $gallery.find("img");
 
     var $images = $(".image");
-    $images.click((e) => {
+    $images.click(function(e) {
         var $image = $(e.currentTarget);
 
         $galleryImg.attr("src", $image.data("url"));
@@ -53,7 +53,7 @@ function init() {
         $body.addClass("no-scroll");
     });
 
-    $gallery.click(() => {
+    $gallery.click(function() {
         $gallery.removeClass("show");
         $body.removeClass("no-scroll");
     });
