@@ -19,11 +19,8 @@ section > .header > h2 {
 }
 
 section > .header > h2::first-letter {
-    color: white;
-    background: steelblue;
-    padding: 0 3px;
-    border-radius: 3px;
-    font-weight: 100;
+    color: steelblue;
+    font-size: 40px;
 }
 
 section > .header > .links > a {
