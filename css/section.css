@@ -18,6 +18,14 @@ section > .header > h2 {
     text-transform: uppercase;
 }
 
+section > .header > h2::first-letter {
+    color: white;
+    background: black;
+    padding: 0 3px;
+    border-radius: 3px;
+    font-weight: 100;
+}
+
 section > .header > .links > a {
     margin-left: 5px;
     margin-right: 10px;
