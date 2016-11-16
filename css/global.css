@@ -19,6 +19,14 @@ article {
     box-sizing: border-box;
 }
 
+footer {
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    color: white;
+    border-top: 2px solid black;
+}
+
 a {
     color: indianred;
     text-decoration: none;
@@ -46,4 +54,8 @@ a:hover {
 
 .code {
     overflow: auto;
+}
+
+hr {
+    width: 300px;
 }

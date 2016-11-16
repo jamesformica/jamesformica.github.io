@@ -1,5 +1,5 @@
 section {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 section > .header {
@@ -10,6 +10,7 @@ section > .header {
 }
 
 section > .header > h2 {
+    font-size: 30px;
     margin: 0;
     padding: 0;
     letter-spacing: 2px;
@@ -57,7 +58,6 @@ section > .info > .image {
     background-repeat: no-repeat;
     background-position: center;
     max-height: 300px;
-    box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
     order: 3;
     cursor: pointer;
 }

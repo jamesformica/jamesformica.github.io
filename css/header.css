@@ -14,7 +14,7 @@ header > .circle {
     left: 50%;
     width: 200px;
     height: 200px;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 50%;
     transform: translateX(-50%) translateY(-50%);
     background: rgba(255,255,255,0.6);
@@ -30,7 +30,6 @@ header > i {
 header > .spin {
     animation-name: head-spin;
     animation-duration: 8s;
-    /*animation-iteration-count: infinite;*/
     animation-timing-function: ease-in-out;
     color: indianred;
 }
@@ -40,7 +39,6 @@ header > .orbit {
     font-size: 70px;
     animation-name: head-orbit;
     animation-duration: 8s;
-    /*animation-iteration-count: infinite;*/
     animation-timing-function: ease-in-out;
     transform: translateY(-20px);
 }
