@@ -21,10 +21,9 @@ article {
 
 footer {
     text-align: center;
-    background: rgba(0,0,0,0.6);
+    background: black;
     padding: 20px;
     color: white;
-    border-top: 2px solid black;
     text-transform: lowercase;
 }
 
