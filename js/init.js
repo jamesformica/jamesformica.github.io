@@ -1,4 +1,13 @@
 function init() {
+    $.ajax({
+        url: "https://fonts.googleapis.com/css?family=Libre+Franklin:400,700",
+        type: "GET"
+    }).done((result) => {
+        let style = document.createElement("style");
+        style.innerHTML = result;
+        document.head.appendChild(style);
+    });
+
     var $body = $("body");
     var $helloWorld = $(".ui-helloworld");
     var $helloWorldMin = $(".ui-helloworld-min");
