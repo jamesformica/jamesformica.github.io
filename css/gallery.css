@@ -16,17 +16,6 @@
     transform: translateY(0);
 }
 
-.gallery > .close {
-    position: absolute;
-    top: 10px;
-    right: 50px;
-    z-index: 1000;
-    color: white;
-    text-decoration: underline;
-    cursor: pointer;
-    text-transform: lowercase;
-}
-
 .gallery > img {
     width: 100%;
     margin: 0 auto;

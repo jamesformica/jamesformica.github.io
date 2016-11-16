@@ -42,7 +42,6 @@ function init() {
     hljs.highlightBlock($helloWorldScott.get(0));
 
     var $gallery = $(".ui-gallery");
-    var $close = $gallery.find(".ui-close");
     var $galleryImg = $gallery.find("img");
 
     var $images = $(".image");
@@ -54,7 +53,7 @@ function init() {
         $body.addClass("no-scroll");
     });
 
-    $close.click(() => {
+    $gallery.click(() => {
         $gallery.removeClass("show");
         $body.removeClass("no-scroll");
     });
