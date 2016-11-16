@@ -19,6 +19,10 @@
         flex-direction: column;
     }
 
+    section > .info > .description {
+        padding-right: 0;
+    }
+
     section > .info > div {
         width: 100%;
     }

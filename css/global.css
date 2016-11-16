@@ -36,6 +36,10 @@ p {
     margin: 20px 0;
 }
 
+li {
+    line-height: 1.8em;
+}
+
 a:hover {
     text-decoration: underline;
 }

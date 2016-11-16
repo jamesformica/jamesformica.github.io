@@ -52,7 +52,7 @@ section > .info > div {
 }
 
 section > .info > .description {
-    padding-right: 20px;
+    padding-right: 40px;
     text-align: justify;
     line-height: 22px;
     order: 2;
