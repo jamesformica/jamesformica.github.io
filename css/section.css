@@ -12,16 +12,12 @@ section > .header {
 
 section > .header > h2 {
     font-size: 30px;
+    font-weight: 100;
     margin: 0;
     padding: 0;
     letter-spacing: 2px;
     flex-grow: 1;
     text-transform: uppercase;
-}
-
-section > .header > h2::first-letter{
-    font-size: 40px;
-    font-weight: 100;
 }
 
 section > .header > .links > a {
