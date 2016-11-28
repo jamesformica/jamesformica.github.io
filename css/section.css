@@ -65,9 +65,9 @@ section > .info > .image {
 }
 
 section > .info > .image.left {
-    background-position: left;
+    background-position: top left;
 }
 
 section > .info > .image.right {
-    background-position: right;
+    background-position: top right;
 }
