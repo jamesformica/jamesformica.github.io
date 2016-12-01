@@ -28,8 +28,12 @@ footer {
 }
 
 a {
-    color: steelblue;
-    text-decoration: none;
+    color: indianred;
+    text-decoration: underline;
+}
+
+a:hover, a:active {
+    color: #c42f2f;
 }
 
 p {
@@ -40,16 +44,12 @@ li {
     line-height: 1.8em;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 .about {
     margin-bottom: 50px;
     text-align: center;
 }
 
-.about > h1 {
+h1 {
     font-weight: 100;
     letter-spacing: 5px;
     font-size: 40px;
