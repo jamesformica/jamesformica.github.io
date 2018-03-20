@@ -1,5 +1,8 @@
 section {
-    margin-bottom: 150px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 1.5rem 2rem;
+    margin-bottom: 10rem;
 }
 
 section > .header {
@@ -7,11 +10,11 @@ section > .header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 section > .header > h2 {
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 100;
     margin: 0;
     padding: 0;
@@ -21,9 +24,9 @@ section > .header > h2 {
 }
 
 section > .header > .links > a {
-    margin-left: 5px;
-    margin-right: 10px;
-    line-height: 16px;
+    margin-left: 0.25rem;
+    margin-right: 0.625rem;
+    line-height: 1rem;
     text-transform: lowercase;
 }
 
@@ -33,7 +36,7 @@ section > .header > .links > a:last-of-type {
 
 section > .header > .links > i {
     color: black;
-    line-height: 16px;
+    line-height: 1rem;
     vertical-align: middle;
 }
 
@@ -48,19 +51,19 @@ section > .info > div {
 }
 
 section > .info > .description {
-    padding-right: 40px;
+    padding-right: 2.5rem;
     text-align: justify;
-    line-height: 22px;
+    line-height: 1.5rem;
     order: 2;
 }
 
 section > .info > .image {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: white;
-    max-height: 300px;
+    max-height: 18.75rem;
     order: 3;
     cursor: pointer;
 }
