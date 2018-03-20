@@ -59,6 +59,7 @@ section > .info > .image {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: white;
     max-height: 300px;
     order: 3;
     cursor: pointer;
