@@ -14,30 +14,22 @@ header {
 }
 
 header > .circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     width: 200px;
     height: 200px;
     border: 5px solid white;
     border-radius: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    background: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
+    background-image: url('../images/me.jpg');
+    background-position: center;
+    background-size: cover;
     z-index: 1;
+    cursor: pointer;
 }
 
-header > i {
-    font-size: 60px;
-    width: 100px; /*some strange cropping issues*/
-    text-align: center;
-    z-index: 100;
-}
-
-header > .spin {
+header > .circle:hover {
     animation-name: head-spin;
     animation-duration: 8s;
     animation-timing-function: ease-in-out;
-    color: white;
 }
 
 @keyframes head-spin {
@@ -64,20 +56,5 @@ header > .spin {
     }
     100% {
         transform: rotate(720deg) scale(1);
-    }
-}
-
-@keyframes head-orbit {
-    0% {
-        transform: rotate(0deg) translateY(-20px);
-    }
-    20% {
-        transform: rotate(0deg) translateY(-20px);
-    }
-    30% {
-        transform: rotate(-360deg) translateY(-20px);
-    }
-    100% {
-        transform: rotate(-360deg) translateY(-20px);
     }
 }
