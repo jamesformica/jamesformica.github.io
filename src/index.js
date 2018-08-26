@@ -7,4 +7,4 @@ import App from './components/App'
 const root = global.document.getElementById('root')
 
 Modal.setAppElement(root)
-ReactDOM.render(<App />, root)
+ReactDOM.render(<App />, global.document.getElementById('root'))

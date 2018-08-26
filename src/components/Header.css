@@ -1,0 +1,24 @@
+.header {
+  width: 100vw;
+  min-height: 80vh;
+  background: radial-gradient(deeppink, midnightblue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: -2rem;
+}
+
+.title {
+  font-size: 4rem;
+  line-height: 5rem;
+  padding-left: 1.5rem;
+  padding-right: 0.5rem;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  background: white;
+}
+
+.highlight {
+  color: deeppink;
+}

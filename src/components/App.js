@@ -1,7 +1,20 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+
+import Container from './Container'
+import Header from './Header'
+import Heading from './Heading'
+import Projects from './Projects'
 
 const App = () => (
-  <h1>.!.</h1>
+  <Fragment>
+    <Header />
+
+    <Container>
+      <Heading id="projects" text="Portfolio" />
+      <Projects />
+    </Container>
+
+  </Fragment>
 )
 
 export default App
