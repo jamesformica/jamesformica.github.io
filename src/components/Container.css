@@ -1,12 +1,12 @@
 .container {
-  background: white;
-  padding: 1.5rem 2rem;
-  border-radius: 1px;
-  background: radial-gradient(aliceblue, white);
-  width: 100vw;
-  max-width: 80vw;
+  width: 100%;
+  max-width: 90vw;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 4rem;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 40rem) {
+  .container {
+    max-width: 80vw;
+  }
 }

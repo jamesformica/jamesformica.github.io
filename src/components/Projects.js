@@ -1,11 +1,12 @@
 import React, { Component, Fragment } from 'react'
 
 import { filterProjects, getFilters } from '../helpers/projectsHelper'
+import Container from './Container'
 import FilterButton from './FilterButton'
+import Filters from './Filters'
+import Project from './Project'
 import projects from '../projects.json'
 import styles from './Projects.css'
-
-import * as images from '../../images'
 
 class Projects extends Component {
   constructor() {
@@ -18,19 +19,21 @@ class Projects extends Component {
 
   render() {
     const { filters, activeFilters } = this.state
-    console.log(images)
+    const filteredProjects = filterProjects(projects, activeFilters)
+
     return (
       <Fragment>
-        {filters.map(f => (
-          <FilterButton key={f} text={f} />
-        ))}
+        <Filters>
+          {filters.map(f => (
+            <FilterButton key={f} text={f} />
+          ))}
+        </Filters>
 
-        {filterProjects(projects, activeFilters).map(p => (
-          <div>
-            <img src={images[p.image]} alt="moo" />
-            {p.name}
+        <Container>
+          <div className={styles.projects}>
+            {filteredProjects.map(p => <Project project={p} />)}
           </div>
-        ))}
+        </Container>
       </Fragment>
     )
   }

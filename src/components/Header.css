@@ -1,12 +1,11 @@
 .header {
   width: 100vw;
   min-height: 80vh;
-  background: radial-gradient(deeppink, midnightblue);
+  background: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: -2rem;
 }
 
 .title {

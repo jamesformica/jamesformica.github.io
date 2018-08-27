@@ -5,4 +5,11 @@
 body {
   margin: 0;
   background-image: url('src/images/tic-tac-toe.png');
+  /* background: radial-gradient(midnightblue, black); */
+
+}
+
+body,
+button {
+  font-family: 'Source Sans Pro', sans-serif;
 }

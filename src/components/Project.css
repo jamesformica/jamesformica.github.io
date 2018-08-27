@@ -1,0 +1,94 @@
+:root {
+  --pad-height: 60%;
+  --action-height: 2.5rem;
+  --radius: 0.5rem;
+}
+
+.project {
+  position: relative;
+  height: 38rem;
+  flex-basis: 40%;
+  border-radius: var(--radius);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--pad-height);
+  background-size: cover;
+  background-position: 50% 50%;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  border-radius: var(--radius);
+}
+
+.pad {
+  height: var(--pad-height);
+}
+
+.info {
+  padding: 1.5rem;
+  line-height: 1.5;
+  background: white;
+  padding-bottom: calc(var(--action-height) * 2);
+  min-height: calc(100% - var(--pad-height));
+}
+
+.actions {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  height: var(--action-height);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+
+.actions::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+  height: calc(var(--action-height) * 1.5);
+  background: linear-gradient(to top, white 30%, transparent);
+}
+
+.name {
+  margin: 0;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.titleBold {
+  composes: title;
+  font-weight: bold;
+}
+
+.tags {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+}
