@@ -1,3 +1,9 @@
+.bg {
+  background: linear-gradient(135deg, deeppink, skyblue, deeppink);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .projects {
   margin-top: 2rem;
   margin-bottom: 6rem;

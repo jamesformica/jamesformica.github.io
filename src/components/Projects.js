@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 
 import { filterProjects, getFilters } from '../helpers/projectsHelper'
 import Container from './Container'
@@ -22,7 +22,7 @@ class Projects extends Component {
     const filteredProjects = filterProjects(projects, activeFilters)
 
     return (
-      <Fragment>
+      <div className={styles.bg}>
         <Filters>
           {filters.map(f => (
             <FilterButton key={f} text={f} />
@@ -34,7 +34,7 @@ class Projects extends Component {
             {filteredProjects.map(p => <Project project={p} />)}
           </div>
         </Container>
-      </Fragment>
+      </div>
     )
   }
 }

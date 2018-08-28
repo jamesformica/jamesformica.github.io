@@ -1,15 +1,15 @@
 :root {
   --pad-height: 60%;
-  --action-height: 2.5rem;
-  --radius: 0.5rem;
+  --action-height: 3rem;
+  --radius: 4px;
 }
 
 .project {
   position: relative;
-  height: 38rem;
-  flex-basis: 40%;
+  height: 40rem;
+  background-color: black;
   border-radius: var(--radius);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
 }
 
 .image {
@@ -38,12 +38,24 @@
   height: var(--pad-height);
 }
 
+.sheild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--pad-height);
+  z-index: 10;
+}
+
 .info {
   padding: 1.5rem;
   line-height: 1.5;
   background: white;
   padding-bottom: calc(var(--action-height) * 2);
   min-height: calc(100% - var(--pad-height));
+  cursor: ns-resize;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+  z-index: 100;
 }
 
 .actions {
@@ -51,13 +63,15 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background: white;
   height: var(--action-height);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background: white;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
+  z-index: 1000;
 }
 
 .actions::after {
@@ -66,8 +80,18 @@
   left: 0;
   bottom: 100%;
   width: 100%;
-  height: calc(var(--action-height) * 1.5);
-  background: linear-gradient(to top, white 30%, transparent);
+  height: calc(var(--action-height) * 0.5);
+  background: linear-gradient(to top, white 50%, transparent);
+}
+
+.actions > span {
+  flex-basis: 50%;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.actions > span:last-child {
+  border-left: 2px solid #f2f2f2;
 }
 
 .name {

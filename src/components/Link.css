@@ -1,0 +1,10 @@
+.link {
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.link:hover {
+  border-bottom: 1px solid;
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Markdown from 'react-markdown'
 
 import FilterButton from './FilterButton'
+import Link from './Link'
 import styles from './Project.css'
 
 import * as images from '../../images'
@@ -61,9 +62,14 @@ class Project extends Component {
             {!!markdown && <Markdown source={markdown} />}
           </div>
         </div>
+        <div className={styles.sheild} />
         <div className={styles.actions}>
-          <a href={project.url} target="_blank" rel="noopener noreferrer">{project.action}</a>
-          <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span role="img" aria-label={project.action}>
+            <Link primary to={project.url}>{project.action}</Link>
+          </span>
+          <span role="img" aria-label={project.action}>
+            <Link secondary to={project.github}>GitHub</Link>
+          </span>
         </div>
       </div>
     )
