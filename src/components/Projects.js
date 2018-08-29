@@ -15,6 +15,18 @@ class Projects extends Component {
       filters: getFilters(projects),
       activeFilters: [],
     }
+
+    this.toggleFilter = this.toggleFilter.bind(this)
+  }
+
+  toggleFilter(text) {
+    const { activeFilters } = this.state
+
+    if (activeFilters.includes(text)) {
+      this.setState({ activeFilters: activeFilters.filter(f => f !== text) })
+    } else {
+      this.setState({ activeFilters: [...activeFilters, ...[text]] })
+    }
   }
 
   render() {
@@ -25,7 +37,12 @@ class Projects extends Component {
       <div className={styles.bg}>
         <Filters>
           {filters.map(f => (
-            <FilterButton key={f} text={f} />
+            <FilterButton
+              key={f}
+              text={f}
+              isActive={activeFilters.includes(f)}
+              onClick={this.toggleFilter}
+            />
           ))}
         </Filters>
 
