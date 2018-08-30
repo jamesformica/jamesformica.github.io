@@ -17,6 +17,7 @@ class Projects extends Component {
     }
 
     this.toggleFilter = this.toggleFilter.bind(this)
+    this.clearFilters = this.clearFilters.bind(this)
   }
 
   toggleFilter(text) {
@@ -29,6 +30,10 @@ class Projects extends Component {
     }
   }
 
+  clearFilters() {
+    this.setState({ activeFilters: [] })
+  }
+
   render() {
     const { filters, activeFilters } = this.state
     const filteredProjects = filterProjects(projects, activeFilters)
@@ -36,6 +41,12 @@ class Projects extends Component {
     return (
       <div className={styles.bg}>
         <Filters>
+          <FilterButton
+            key="Show"
+            text={`Show all (${projects.length})`}
+            isActive={!activeFilters.length}
+            onClick={this.clearFilters}
+          />
           {filters.map(f => (
             <FilterButton
               key={f}
@@ -48,7 +59,7 @@ class Projects extends Component {
 
         <Container>
           <div className={styles.projects}>
-            {filteredProjects.map(p => <Project project={p} />)}
+            {filteredProjects.map(p => <Project project={p} key={p.name} />)}
           </div>
         </Container>
       </div>

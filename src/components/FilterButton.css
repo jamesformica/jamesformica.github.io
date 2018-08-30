@@ -1,8 +1,9 @@
 .button {
-  border: 2px solid white;
-  border-radius: 1000px;
-  font-size: 0.75rem;
   font-weight: bold;
-  cursor: pointer;
   text-align: center;
+  padding: 0.25rem 0.5rem;
+  border-width: 0.25rem;
+  border-style: solid;
+  margin: 0.25rem;
+  outline: none;
 }

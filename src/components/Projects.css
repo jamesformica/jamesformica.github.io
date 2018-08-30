@@ -1,5 +1,14 @@
+:root {
+  --dot-colour: hsl(178, 74%, 95%);
+  --dot-colour-2: hsl(278, 100%, 95%);
+  --dot-size: 20px;
+}
+
 .bg {
-  background: linear-gradient(135deg, deeppink, skyblue, deeppink);
+  /* background: linear-gradient(135deg, deeppink, skyblue, deeppink); */
+  background-image: radial-gradient(var(--dot-colour) 15%, transparent 0), radial-gradient(var(--dot-colour-2) 15%, transparent 0);
+  background-size: var(--dot-size) var(--dot-size);
+  background-position: 0 0, calc(var(--dot-size) / 2) calc(var(--dot-size) / 2);
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -8,7 +17,8 @@
   margin-top: 2rem;
   margin-bottom: 6rem;
   display: grid;
-  grid-gap: 2rem;
-  justify-content: center;
+  grid-column-gap: 2rem;
+  grid-row-gap: 4rem;
+  justify-content: space-between;
   grid-template-columns: repeat(auto-fill, 22rem);
 }
