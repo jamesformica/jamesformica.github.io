@@ -12,13 +12,13 @@ const imgStyles = image => ({
   backgroundImage: `url('${images[image]}')`,
 })
 
-const loadMarkdown = (markdown) => {
-  return new Promise((resolve) => {
+const loadMarkdown = markdown => (
+  new Promise((resolve) => {
     global.fetch(projects[markdown])
       .then(response => response.text())
       .then(md => resolve(md))
   })
-}
+)
 
 const buildName = name => (
   name.map((n, i) => (
