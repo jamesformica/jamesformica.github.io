@@ -29,7 +29,7 @@ const About = () => (
         <p />
         <p>
           <Link className={styles.item} to="https://twitter.com/jamesralphjr">twitter</Link>-
-          <Link className={styles.item} to="https://linkedin.com/jamesformica">linkedIn</Link>-
+          <Link className={styles.item} to="https://linkedin.com/in/james-formica">linkedIn</Link>-
           <Link className={styles.item} to="mailto:james.formica@gmail.com">email</Link>
         </p>
       </div>
