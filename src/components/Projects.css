@@ -1,14 +1,5 @@
-:root {
-  --dot-colour: hsl(178, 74%, 95%);
-  --dot-colour-2: hsl(278, 100%, 95%);
-  --dot-size: 20px;
-}
-
 .bg {
-  /* background: linear-gradient(135deg, deeppink, skyblue, deeppink); */
-  background-image: radial-gradient(var(--dot-colour) 15%, transparent 0), radial-gradient(var(--dot-colour-2) 15%, transparent 0);
-  background-size: var(--dot-size) var(--dot-size);
-  background-position: 0 0, calc(var(--dot-size) / 2) calc(var(--dot-size) / 2);
+  background: linear-gradient(to bottom, white, #f0f0f0);
   padding-top: 3rem;
   padding-bottom: 3rem;
 }

@@ -5,7 +5,7 @@ import FilterButton from './FilterButton'
 import Link from './Link'
 import styles from './Project.css'
 
-import * as images from '../../images'
+import * as images from '../images'
 import * as projects from '../markdown'
 
 const imgStyles = image => ({

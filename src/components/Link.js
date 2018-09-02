@@ -1,9 +1,17 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 
-import styles from './Link.css'
-
 const StlyedLink = styled.a`
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: black;
+
+  &:hover {
+    border-bottom: 1px solid;
+  }
+
   ${props => props.primary && css`
     color: blueviolet;
   `}
@@ -15,7 +23,6 @@ const StlyedLink = styled.a`
 
 const Link = ({ to, children, ...rest }) => (
   <StlyedLink
-    className={styles.link}
     href={to}
     target="_blank"
     rel="noopener noreferrer"
